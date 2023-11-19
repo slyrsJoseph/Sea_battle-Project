@@ -1,9 +1,16 @@
 #pragma once
 #include <iostream>
+#include <conio.h>
 
 using namespace std;
 
 
+
+
+
+void ShowPlayerAndBotGrids(char playerGrid[GRID_SIZE][GRID_SIZE], char botGrid[GRID_SIZE][GRID_SIZE]);
+void PlayerTurn(char playerGrid[GRID_SIZE][GRID_SIZE], char botGrid[GRID_SIZE][GRID_SIZE]);
+void BotTurn(char botGrid[GRID_SIZE][GRID_SIZE], char playerGrid[GRID_SIZE][GRID_SIZE]);
 
 void PlayerTurn(char grid[GRID_SIZE][GRID_SIZE], char botGrid[GRID_SIZE][GRID_SIZE]) {
     ShowPlayerAndBotGrids(grid, botGrid);

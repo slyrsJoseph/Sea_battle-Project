@@ -12,27 +12,10 @@
 #include "IntroduceFunction.h"
 #include "GameFinishAndResultFunctions.h"
 
+
+
 using namespace std;
 
-
-bool playerHit = false;
-const int GRID_SIZE = 10;
-const int num_ship = 10;
-
-void InitializeGrid(char grid[GRID_SIZE][GRID_SIZE]);
-void ShowPlayerAndBotGrids(char playerGrid[GRID_SIZE][GRID_SIZE], char botGrid[GRID_SIZE][GRID_SIZE]);
-void ShowPlayerGrid(char grid[GRID_SIZE][GRID_SIZE]);
-void Welcome();
-void Color_menu(int color);
-void Game_result(bool playerWin);
-void PlaceShips(char grid[GRID_SIZE][GRID_SIZE]);
-void PlayerTurn(char playerGrid[GRID_SIZE][GRID_SIZE], char botGrid[GRID_SIZE][GRID_SIZE]);
-void BotTurn(char botGrid[GRID_SIZE][GRID_SIZE], char playerGrid[GRID_SIZE][GRID_SIZE]);
-void ManualPlacement(char grid[GRID_SIZE][GRID_SIZE], char grid2[GRID_SIZE][GRID_SIZE]);
-bool IsPlacementValid(char grid[GRID_SIZE][GRID_SIZE], int x, int y, int size, bool vertical);
-bool IsValidCell(int x, int y);
-bool AreNeighborsClear(char grid[GRID_SIZE][GRID_SIZE], int x, int y, int size, bool vertical);
-bool Game_finished(char grid[GRID_SIZE][GRID_SIZE]);
 
 
 

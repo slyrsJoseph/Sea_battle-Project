@@ -6,6 +6,15 @@
 using namespace std;
 
 
+
+
+void PlaceShips(char grid[GRID_SIZE][GRID_SIZE]);
+void ManualPlacement(char grid[GRID_SIZE][GRID_SIZE], char grid2[GRID_SIZE][GRID_SIZE]);
+bool IsPlacementValid(char grid[GRID_SIZE][GRID_SIZE], int x, int y, int size, bool vertical);
+bool IsValidCell(int x, int y);
+
+
+
 void PlaceShips(char grid[GRID_SIZE][GRID_SIZE]) {
     int shipSizes[num_ship] = { 4, 3, 3, 2, 2, 2, 1, 1, 1, 1 };
 

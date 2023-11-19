@@ -2,6 +2,13 @@
 #include <iostream>
 
 
+
+bool IsPlacementValid(char grid[GRID_SIZE][GRID_SIZE], int x, int y, int size, bool vertical);
+bool IsValidCell(int x, int y);
+bool AreNeighborsClear(char grid[GRID_SIZE][GRID_SIZE], int x, int y, int size, bool vertical);
+
+
+
 bool AreNeighborsClear(char grid[GRID_SIZE][GRID_SIZE], int x, int y, int size, bool vertical) {
     int startX, startY, endX, endY;
     if (x > 0) {

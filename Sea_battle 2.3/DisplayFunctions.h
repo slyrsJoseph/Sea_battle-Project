@@ -2,7 +2,16 @@
 #include <iostream>
 #include <iomanip>
 
+
 using namespace std;
+
+bool playerHit = false;
+const int GRID_SIZE = 10;
+const int num_ship = 10;
+
+
+void ShowPlayerAndBotGrids(char playerGrid[GRID_SIZE][GRID_SIZE], char botGrid[GRID_SIZE][GRID_SIZE]);
+void InitializeGrid(char grid[GRID_SIZE][GRID_SIZE]);
 
 
 void InitializeGrid(char grid[GRID_SIZE][GRID_SIZE]) {

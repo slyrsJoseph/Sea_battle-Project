@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 
+void Welcome();
+void Color_menu(int color);
 
 void Welcome() {
     Color_menu(12);
